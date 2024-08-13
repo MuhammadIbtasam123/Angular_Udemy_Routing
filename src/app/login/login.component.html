@@ -1,0 +1,31 @@
+<!-- <div calss="overlay"></div> -->
+<p-toast></p-toast> 
+<div class="login-form-container">
+    <div class="login-form">
+        <div class="cancel-button-div">
+                <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <h2>Please Login Here</h2>
+        <form class="container" [formGroup]="loginForm" (ngSubmit)="onFormSubmission()">
+            <div>               
+                <label for="uname"><b>Username</b></label>
+                <input [ngClass]="{'Border-error': isSubmitted && loginForm.get('userName')?.invalid}" type="text" placeholder="Enter Username" name="username" formControlName="userName" required>
+                <small class="error-occured" *ngIf="isSubmitted && loginForm.get('userName')?.invalid">*Enter your Username</small>
+            </div>
+      
+
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input [ngClass]="{'Border-error': isSubmitted && loginForm.get('password')?.invalid}" type="password" placeholder="Enter Password" name="password" formControlName="password" required>
+                <small class="error-occured" *ngIf="isSubmitted && loginForm.get('password')?.invalid">*Enter your Password</small>
+            </div>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </form>
+
+    </div>
+  </div>
+  

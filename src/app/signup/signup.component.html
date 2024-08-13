@@ -1,0 +1,37 @@
+<div class="login-form-container">
+    <div class="login-form">
+      <div class="cancel-button-div">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <h2>Please Signup Here</h2>
+      <form [formGroup]="signupForm" (ngSubmit)="onFormSubmission()">
+        <div>
+          <label for="uname"><b>Username</b></label>
+          <input [ngClass]="{'border-error': isFormSubmitted && f['userName']?.errors}" type="text" placeholder="Enter Username" formControlName="userName" required>
+          <small class="error-occured" *ngIf="isFormSubmitted && f['userName']?.errors">*Enter your username</small>
+        </div>
+  
+        <div>
+          <label for="psw"><b>Password</b></label>
+          <input [ngClass]="{'border-error': isFormSubmitted && f['password']?.errors}" type="password" placeholder="Enter Password" formControlName="password" required>
+          <small class="error-occured" *ngIf="isFormSubmitted && f['password']?.errors">*Enter your password</small>
+        </div>
+  
+        <div>
+          <label for="psw"><b>Confirm Password</b></label>
+          <input [ngClass]="{'border-error': isFormSubmitted && f['confirmPassword']?.errors}" type="password" placeholder="Confirm Password" formControlName="confirmPassword" required>
+          <small class="error-occured" *ngIf="isFormSubmitted && f['confirmPassword']?.errors">*Enter Confirm Password</small>
+        </div>
+  
+        <div>
+          <small class="error-occured" *ngIf="f['password']?.value && f['confirmPassword']?.value && f['password']?.value != f['confirmPassword']?.value">*Password doesn't match or password Field is empty.</small>
+        </div>
+        <div>
+          <small *ngIf="userExist" class="error-occured">*Username already Exsit</small>
+        </div>
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+
+  </div>
+  <p-toast></p-toast> 

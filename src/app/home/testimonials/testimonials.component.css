@@ -1,0 +1,28 @@
+.text-color-heading {
+    color: #FF5733; /* Replace with your specific heading color */
+}
+
+.testimonial-section {
+    background-color: #343a40; /* Dark background color for the section */
+    padding: 60px 0;
+}
+
+.testimonial-section h3 {
+    color: #FF5733; /* Matching heading color */
+}
+
+.testimonial-section p {
+    color: #f8f9fa; /* Light text color for better contrast */
+}
+
+.testimonial-section .text-primary {
+    color: #9307ff !important; /* Custom primary color */
+}
+
+.testimonial-section .text-warning {
+    color: #FFC107 !important; /* Star color */
+}
+
+.testimonial-section .rounded-circle {
+    border: 3px solid #FF5733; /* Border color for images */
+}

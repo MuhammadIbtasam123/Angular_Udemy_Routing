@@ -1,0 +1,14 @@
+.text-color-heading{
+    color: #fc6442;
+    }
+
+    .button-heading1{
+        color:#fc6442;
+        background-color: none;
+        border: 1px solid #fc6442;
+    }
+
+    .button-heading2{
+        color:#fff;
+        background-color: #fc6442;
+    }

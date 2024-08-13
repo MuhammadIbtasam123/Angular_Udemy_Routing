@@ -1,0 +1,12 @@
+.description-color{
+    color: tomato !important;
+}
+
+.side-bar-banner{
+    width: 100%;
+    height: 200px;
+    background-color: #28282B;
+    text-align: center;
+    padding: 70px 20px;
+    color:white;
+}

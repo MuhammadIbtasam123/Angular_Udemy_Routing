@@ -1,0 +1,36 @@
+<div class="page-header-topbar">
+  <div class="page-header-secondary-msg">
+
+  </div>  
+  <div class="page-header-secondary-nav">
+    <a href="#">SEARCH</a>
+    <a href="#">POPULAR</a>
+    <a href="#">TESTIMONY</a>
+    <a href="#">SERVICES</a>
+    <a href="#">CONTACT</a>
+  </div>
+</div>
+<div class="page-header">
+    <!--HOME HEADER-->
+    <div class="page-header-logo">
+      <h2>Masterio <span>.</span></h2>
+    </div>
+    <div>
+      <div class="page-header-secondary">
+        
+      </div>      
+      <div class="page-header-primary">
+        <div class="page-header-primary-nav">
+            <a routerLink="/" [routerLinkActive]="'actived'" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+            <a routerLink="courses" [routerLinkActive]="'actived'" [routerLinkActiveOptions]="{exact:true}">COURSES</a>
+        </div>
+        <div class="page-header-login-logout">
+          <a routerLink="/login" [routerLinkActive]="'actived'" [routerLinkActiveOptions]="{exact:true}">LOGIN</a>
+          <a routerLink="/signup" [routerLinkActive]="'actived'" [routerLinkActiveOptions]="{exact:true}">SIGNUP</a>
+          <a routerLink="/login" [queryParams]="{logout: true}" (click)="logout()">LOGOUT</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <p-toast></p-toast> 

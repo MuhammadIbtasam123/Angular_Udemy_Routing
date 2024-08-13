@@ -1,0 +1,208 @@
+{
+  "users": [
+    {
+      "username": "ibtasam",
+      "password": "123",
+      "id": "0be3"
+    },
+    {
+      "id": "3476",
+      "username": "q",
+      "password": "q"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "Complete Modern JavaScript Course",
+      "price": 499,
+      "desc": "Master JavaScript with this comprehensive course. From the basics to advanced concepts, you’ll learn how to build dynamic and interactive web applications using modern JavaScript features. Perfect for beginners and seasoned developers alike, this course will boost your coding skills and prepare you for a career in web development.",
+      "image": "./../assets/courses/course1.jpg",
+      "rating": 4.5,
+      "duration": 18.2,
+      "author": "Steve Smith",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Alice Johnson",
+          "description": "Great course! Learned a lot about modern JavaScript.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Bob Williams",
+          "description": "Well-structured content, but could use more examples.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "A Complete Angular Course",
+      "price": 599,
+      "desc": "Dive into Angular and learn how to build robust, scalable, and dynamic single-page applications. This course covers everything from Angular’s architecture and components to advanced topics like forms, routing, and state management. Whether you're a beginner or looking to deepen your understanding, this course will equip you with the skills needed to excel in front-end development.",
+      "image": "./../assets/courses/course2.jpg",
+      "rating": 4.9,
+      "duration": 20.8,
+      "author": "Sarah King",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Charlie Smith",
+          "description": "Amazing course with in-depth Angular content!",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Dana White",
+          "description": "Learned a lot, but some sections were too fast-paced.",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "A Complete Node JS Bootcamp",
+      "price": 449,
+      "desc": "Learn how to build fast and scalable server-side applications using Node.js. This bootcamp takes you from the basics of Node.js to building RESTful APIs and real-time applications. It’s designed for developers who want to understand back-end development and leverage the power of JavaScript across the entire stack.",
+      "image": "./../assets/courses/course3.jpg",
+      "rating": 3.7,
+      "duration": 16.6,
+      "author": "Mark Vought",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Eve Davis",
+          "description": "Good for beginners, but lacks advanced content.",
+          "rating": 3.5
+        },
+        {
+          "id": 2,
+          "userName": "Frank Miller",
+          "description": "Loved the hands-on projects!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "A Complete React Developer Course",
+      "price": 599,
+      "desc": "Become a React developer with this in-depth course. You’ll start with the fundamentals and progress to building complex, high-performance web applications. Learn about React components, hooks, state management, and how to integrate APIs to build responsive user interfaces. This course is ideal for developers who want to specialize in front-end development.",
+      "image": "./../assets/courses/course4.jpg",
+      "rating": 4.8,
+      "duration": 28.2,
+      "author": "Sarah King",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Grace Kelly",
+          "description": "The best React course I've taken. Highly recommend!",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Hank Williams",
+          "description": "Comprehensive and easy to follow.",
+          "rating": 4.8
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "ASP.NET Core with Web API",
+      "price": 649,
+      "desc": "Learn to build powerful, scalable, and secure web applications using ASP.NET Core and Web API. This course guides you through the essentials of building APIs, implementing authentication, and deploying your applications. It’s perfect for developers who want to enhance their skills in building enterprise-level applications.",
+      "image": "./../assets/courses/course5.jpg",
+      "rating": 3.5,
+      "duration": 34.4,
+      "author": "Steve Smith",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Ivy Brown",
+          "description": "Good coverage of ASP.NET Core, but could include more examples.",
+          "rating": 3.5
+        },
+        {
+          "id": 2,
+          "userName": "Jack Lee",
+          "description": "A bit too advanced for beginners.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Frontend Development with Vue.js",
+      "price": 329,
+      "desc": "Explore the simplicity and flexibility of Vue.js in this hands-on course. You’ll learn how to build modern, responsive user interfaces and single-page applications with Vue.js. From basic concepts to advanced techniques, this course is perfect for developers who want to streamline their front-end development process.",
+      "image": "./../assets/courses/course6.jpg",
+      "rating": 4.5,
+      "duration": 17.7,
+      "author": "Steve Smith",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kim Carter",
+          "description": "Simple and effective course on Vue.js.",
+          "rating": 4.5
+        },
+        {
+          "id": 2,
+          "userName": "Liam Evans",
+          "description": "Great course, but needs more advanced topics.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "A Complete Python Bootcamp",
+      "price": 469,
+      "desc": "Master Python programming in this comprehensive bootcamp. Covering everything from basic syntax to advanced libraries, you’ll learn how to build applications, automate tasks, and analyze data. This course is ideal for aspiring developers, data scientists, and anyone interested in harnessing the power of Python.",
+      "image": "./../assets/courses/course7.jpg",
+      "rating": 3.4,
+      "duration": 32.6,
+      "author": "Mark Vought",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Nina Walker",
+          "description": "Solid introduction to Python, but not enough depth.",
+          "rating": 3.5
+        },
+        {
+          "id": 2,
+          "userName": "Oscar Turner",
+          "description": "Good for beginners, but lacks challenging projects.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Machine Learning with Python",
+      "price": 1299,
+      "desc": "Unlock the potential of machine learning with Python in this advanced course. Learn how to implement machine learning algorithms, build predictive models, and analyze data using Python’s powerful libraries. This course is perfect for developers, data scientists, and analysts who want to dive deep into the world of AI and machine learning.",
+      "image": "./../assets/courses/course8.jpg",
+      "rating": 4.8,
+      "duration": 26.7,
+      "author": "Sarah King",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Paul Harris",
+          "description": "Comprehensive course on machine learning. Worth every penny!",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Quincy Adams",
+          "description": "Advanced and challenging, but very rewarding.",
+          "rating": 4.7
+        }
+      ]
+    }
+  ]
+}
