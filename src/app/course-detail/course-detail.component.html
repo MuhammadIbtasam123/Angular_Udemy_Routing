@@ -34,7 +34,7 @@
         <h5 class="text-muted"><del>${{CourseList?.price}}</del></h5>
         <h4 class="text-danger mb-3"><strong>${{(CourseList?.price * 0.2).toFixed(2)}}</strong></h4>
         <p class="text-muted">Limited-time offer</p>
-        <a href="#" class="btn btn-primary w-100 mb-3" style="background-color: #FF4500; color: white; border-color: #FF4500;">Buy Now</a>
+        <a routerLink="/course/checkout" [state]="CourseList" class="btn btn-primary w-100 mb-3" style="background-color: #FF4500; color: white; border-color: #FF4500;">Buy Now</a>
         <p class="mb-0">30-Day Money-Back Guarantee</p>
       </div>
     </div>

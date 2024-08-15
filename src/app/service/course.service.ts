@@ -18,7 +18,7 @@ export class CourseService {
   constructor( private http: HttpClient) { }
 
   getAllCourses(): Observable <ICourse[]>{
-    return this.http.get<ICourse[]>(`${this.BASE_URL}/${this.AllCoursesEndpoint}`)
+      return this.http.get<ICourse[]>(`${this.BASE_URL}/${this.AllCoursesEndpoint}`)
   }
 
   getCourseById( id:number): Observable <ICourse>{

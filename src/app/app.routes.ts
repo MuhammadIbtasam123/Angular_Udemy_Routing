@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { CoursesComponent } from './home/courses/courses.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { CanActivate } from './service/auth-guard-fn.service';
+import { CheckoutComponent } from './checkout/checkout.component';
 // import { AuthGuardService } from './service/auth-guard.service';
 
 
@@ -20,6 +21,7 @@ export const routes: Routes = [
 
     //using authguard function approach 
     {path:'course/details/:id',component: CourseDetailComponent, pathMatch:'full', canActivate:[CanActivate]},
+    {path:'course/checkout',component: CheckoutComponent,pathMatch:'full',canActivate:[CanActivate]},
     {path:'**', component: NotFoundComponent, pathMatch:'full'}, // wild care when no match
 
     // crating a child routes as of course deatils is extension to courses

@@ -3,7 +3,7 @@ import { CourseService } from '../../service/course.service';
 import { ICourse } from '../../interface/course';
 import { CommonModule } from '@angular/common';
 import { CoursePipe } from '../../pipe/course.pipe';
-import { Params, RouterLink } from '@angular/router';
+import { NavigationStart, Params, RouterLink } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-courses',
@@ -18,17 +18,28 @@ export class CoursesComponent implements OnInit {
   course:CourseService = inject(CourseService);
   activatedRoute:ActivatedRoute = inject(ActivatedRoute);
   queryVal:string;
+  showLoader:boolean = true;
 
   ngOnInit(): void {
+    debugger
+      this.showLoader = true;
       this.activatedRoute.queryParams.subscribe((queryValue)=>{
         if (queryValue['search']){
           this.queryVal = queryValue['search'];
-          this.loadCourseByQueryParams();
+          setTimeout(() => {
+            this.loadCourseByQueryParams();
+            this.showLoader = false;
+
+          }, 2000);
         }
         else{
-          this.loadCourses();
+          setTimeout(() => {
+            this.loadCourses();
+            this.showLoader = false;
+          }, 2000);
         }
       })
+
       
   }
 

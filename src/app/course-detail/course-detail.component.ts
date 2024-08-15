@@ -1,48 +1,3 @@
-// import { Component } from '@angular/core';
-// import { ICourse } from '../interface/course';
-// import { CourseService } from '../service/course.service';
-// import { inject } from '@angular/core';
-// import { CoursePipe } from '../pipe/course.pipe';
-// import { ActivatedRoute, RouterLink } from '@angular/router';
-// import { CommonModule } from '@angular/common';
-// @Component({
-//   selector: 'app-course-detail',
-//   standalone: true,
-//   imports: [CoursePipe,CommonModule,RouterLink],
-//   templateUrl: './course-detail.component.html',
-//   styleUrl: './course-detail.component.css'
-// })
-// export class CourseDetailComponent {
-//   CourseList!: ICourse[];
-//   courseId: number;
-
-
-//   course:CourseService = inject(CourseService);
-//   activeRoute:ActivatedRoute = inject(ActivatedRoute)
-
-//   ngOnInit(): void {
-//       this.loadCoursesOfId();
-//   }
-
-//   loadCoursesOfId(){
-//     // console.log(this.activeRoute.snapshot.paramMap['params'].id)
-
-//     // getting the id from URL
-//     // this.courseId = +this.activeRoute.snapshot.paramMap['params'].id // when next and previous button it wont work
-
-//     this.activeRoute.paramMap.subscribe((data)=>{
-//       // console.log(data.get('id'))
-//       this.courseId = +data.get('id'); // + converting to number
-//       // getting th course dataiis from api
-//       this.course.getCourseById(this.courseId).subscribe((data)=>{
-//         this.CourseList = data;
-//       })
-//     })
-
-
-//   }
-// }
-
 import { Component } from '@angular/core';
 import { ICourse } from '../interface/course';
 import { CourseService } from '../service/course.service';
@@ -50,8 +5,8 @@ import { inject } from '@angular/core';
 import { CoursePipe } from '../pipe/course.pipe';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { getHeapSnapshot } from 'v8';
-
+import { Router } from '@angular/router';
+import { state } from '@angular/animations';
 @Component({
   selector: 'app-course-detail',
   standalone: true,
@@ -63,7 +18,7 @@ export class CourseDetailComponent {
   CourseList!: ICourse; // Changed from ICourse[] to ICourse
   courseId!: number; // Ensured courseId is defined before use
   length!:number;
-
+  router:Router = inject(Router);
   course: CourseService = inject(CourseService);
   activeRoute: ActivatedRoute = inject(ActivatedRoute);
 
@@ -81,5 +36,6 @@ export class CourseDetailComponent {
       });
     });
   }
+
 }
 

@@ -1,0 +1,70 @@
+<div class="container my-5 p-5 bg-dark">
+    <div class="row g-5">
+      <!-- Left side: Course Purchase Info -->
+      <div class="col-md-6">
+        <h3>{{courseDetails?.title}}</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">1x Course</h6>
+              <small class="text-body-secondary">Course details</small>
+            </div>
+            <span class="text-body-secondary">${{courseDetails?.price}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Discount</h6>
+            </div>
+            <span class="text-body-secondary">- $10</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Sub Total</h6>
+            </div>
+            <span class="text-body-secondary">${{courseDetails?.price - 10}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Tax</h6>
+            </div>
+            <span class="text-body-secondary">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>${{courseDetails?.price - 10 + 5}}</strong>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Right side: Payment Information -->
+      <div class="col-md-6">
+        <h3>Payment Information</h3>
+        <form>
+          <div class="mb-3">
+            <label for="fullName" class="form-label text-white">Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label text-white">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" required>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label for="expiryMonth" class="form-label text-white">Expires on</label>
+              <input type="month" class="form-control" id="expiryMonth" required>
+            </div>
+            <div class="col-md-4">
+              <label for="expiryYear" class="form-label text-white">Year</label>
+              <input type="year" class="form-control" id="expiryYear" required>
+            </div>
+            <div class="col-md-4">
+              <label for="cvv" class="form-label text-white">CVV</label>
+              <input type="number" class="form-control" id="cvv" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mt-4">Buy Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
